@@ -17,4 +17,8 @@ function terraformInit {
   # Exit code of !0 indicates failure.
   echo "init: error: failed to initialize Terraform configuration in ${tfWorkingDir}"
   echo "${initOutput}"
+  echo
+
+  exit ${initExitCode}
 }
+
