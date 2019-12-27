@@ -2,7 +2,7 @@
 #this is using for terraform  terratest
 function goTest {
   echo "install the terratest dependencies"
-  apk add --update --no-cache go gcc build-base
+  apk add -d --update --no-cache go gcc build-base
   echo "Install Go for terratest"
   wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh \
  | bash -s -- --version 1.13.2
